@@ -7,11 +7,13 @@
 import requests
 import csv
 
+key = 's' #get API key from email
+
 def NewsFromBBC(j):
   
     # BBC news api
     for i in range(1,j):
-        main_url = " https://newsapi.org/v2/everything?sources=bbc-news&pageSize=100&page=" + str(i) + "&apiKey=abd1cde781dc46b385045b20e214a7e8"   
+        main_url = " https://newsapi.org/v2/everything?sources=bbc-news&pageSize=100&page=" + str(i) + "&apiKey=" + key     
         # fetching data in json format
              
         articlesToCSV(main_url,i)

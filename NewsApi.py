@@ -1,5 +1,5 @@
 # News API
-# This script pulls data from various news sources
+# This script pulls data from various BBC
 # Written by Jesse & Jade
 
 
